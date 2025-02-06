@@ -9,7 +9,7 @@ import { toast } from "react-toastify";
 const Game: React.FC = () => {
   const socket = useSocket();
   const [started, setStarted] = useState(false);
-  const [chess, setChess] = useState<Chess>(new Chess());
+  const [chess, _] = useState<Chess>(new Chess());
   const [oppentReady, setOppentReady] = useState(false);
   const [board, setBoard] = useState(chess.board());
   console.log(socket);
