@@ -10,7 +10,7 @@ interface ButtonType {
 const Button: React.FC<ButtonType> = ({ children, onClick, className }) => {
   return (
     <button
-      className={`bg-[#50a640] hover:bg-[#50bb3d] px-6 py-6 transition-colors duration-100 rounded-lg cursor-crosshair ${className}`}
+      className={`bg-[#50a640] hover:bg-[#50bb3d] px-6 py-6 transition-colors duration-100 rounded-lg cursor-pointer ${className}`}
       onClick={onClick}
     >
      { children } 
